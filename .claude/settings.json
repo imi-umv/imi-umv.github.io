@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:switch-justdance.github.io)",
+      "Bash(curl -s https://switch-justdance.github.io)"
+    ]
+  }
+}

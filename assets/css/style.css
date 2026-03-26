@@ -1,0 +1,20 @@
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --muted:#9aa6b2;
+  --accent:#2b6cb0;
+  --text:#e6eef6;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,var(--bg),#071123);color:var(--text);line-height:1.5}
+.site-header{padding:40px 20px;text-align:center;background:transparent}
+.site-header h1{margin:0;font-size:1.6rem}
+.authors{color:var(--muted);margin-top:6px}
+.content{max-width:860px;margin:28px auto;padding:0 20px}
+.links{display:flex;gap:12px;justify-content:flex-start;margin-bottom:20px}
+.card{background:var(--card);padding:10px 16px;border-radius:8px;color:var(--text);text-decoration:none;border:1px solid rgba(255,255,255,0.03)}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,0.4)}
+.abstract{background:rgba(255,255,255,0.02);padding:18px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+.abstract h2{margin-top:0}
+.meta{margin-top:18px;color:var(--muted)}
+.site-footer{text-align:center;padding:16px 0;color:var(--muted)}

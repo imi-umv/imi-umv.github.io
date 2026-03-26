@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Flip Stunts on Bicycle Robots using Iterative Motion Imitation">
+  <meta name="keywords" content="Bicycle Robot, Reinforcement Learning, Motion Imitation, Flip, UMV, IMI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flip Stunts on Bicycle Robots using Iterative Motion Imitation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+<!-- Hero / Title -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Flip Stunts on Bicycle Robots using Iterative Motion Imitation
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a class="author-link" href="https://jhkim.me/" target="_blank">Jeonghwan Kim</a><sup>1,2</sup>,</span>
+            <span class="author-block"><a class="author-link" href="https://www.linkedin.com/in/shamelfahmi/" target="_blank">Shamel Fahmi</a><sup>1</sup>,</span>
+            <span class="author-block"><a class="author-link" href="https://seungeunrho.github.io/" target="_blank">Seungeun Rho</a><sup>1,2</sup>,</span>
+            <span class="author-block"><a class="author-link" href="https://faculty.cc.gatech.edu/~sha9/" target="_blank">Sehoon Ha</a><sup>2</sup>,</span>
+            <span class="author-block"><a class="author-link" href="https://www.linkedin.com/in/gabrielnelson/" target="_blank">Gabriel Nelson</a><sup>1</sup></span>
+          </div>
+
+          <div class="is-size-6 publication-authors" style="margin-top:0.5rem;">
+            <span class="author-block"><sup>1</sup>RAI Institute, Cambridge, MA, USA</span>
+            &nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Georgia Institute of Technology, Atlanta, GA, USA</span>
+          </div>
+
+          <div class="is-size-5" style="margin-top:0.6rem; color:#666; font-weight:500;">
+            ICRA 2026
+          </div>
+
+          <!-- Links -->
+          <div class="column has-text-centered" style="margin-top:1rem;">
+            <div class="publication-links">
+              <!-- arXiv -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- RAI Institute -->
+              <span class="link-block">
+                <a href="https://rai-inst.com/resources/papers/flip-stunts-on-bicycle-robots-using-iterative-motion-imitation/"
+                   target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-globe"></i>
+                  </span>
+                  <span>RAI Institute</span>
+                </a>
+              </span>
+              <!-- YouTube -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser Video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline controls width="100%">
+        <source src="videos/Updated ICRA26 UMV Flip Video Submission PostProcessed.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered" style="margin-top:1rem;">
+        <b>IMI</b> enables the first unassisted acrobatic front-flip on a bicycle robot (UMV),
+        starting from an infeasible reference motion.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work demonstrates a front-flip on bicycle robots via reinforcement learning,
+            particularly by imitating reference motions that are infeasible and imperfect.
+          </p>
+          <p>
+            To address this, we propose <b>Iterative Motion Imitation (IMI)</b>, a method that
+            iteratively imitates trajectories generated by prior policy rollouts. Starting from an
+            initial reference that is kinematically or dynamically infeasible, IMI helps train
+            policies that lead to feasible and agile behaviors.
+          </p>
+          <p>
+            We demonstrate our method on <b>Ultra-Mobility Vehicle (UMV)</b>, a bicycle robot that
+            is designed to enable agile behaviors. From a self-colliding table-to-ground flip
+            reference generated by a model-based controller, we are able to train policies that
+            enable ground-to-ground and ground-to-table front-flips.
+          </p>
+          <p>
+            We show that compared to a single-shot motion imitation, IMI results in policies with
+            higher success rates and can transfer robustly to the real world. To our knowledge,
+            this is the first unassisted acrobatic flip behavior on such a platform.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX -->
+<section class="section" id="bibtex">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">BibTeX</h2>
+        <div class="bibtex-block">
+          <button class="copy-btn" onclick="copyBibtex()" title="Copy to clipboard">
+            <i class="fas fa-copy"></i>
+          </button>
+          <pre id="bibtex-text">@inproceedings{kim2026flipstunts,
+  title     = {Flip Stunts on Bicycle Robots using Iterative Motion Imitation},
+  author    = {Kim, Jeonghwan and Fahmi, Shamel and Rho, Seungeun and Ha, Sehoon and Nelson, Gabriel},
+  booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2026}
+}</pre>
+        </div>
+        <p id="copy-msg" style="display:none; margin-top:0.5rem; color:#48c774;">Copied!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyBibtex() {
+  const text = document.getElementById('bibtex-text').innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    const msg = document.getElementById('copy-msg');
+    msg.style.display = 'block';
+    setTimeout(function() { msg.style.display = 'none'; }, 2000);
+  });
+}
+</script>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p class="is-size-6" style="color:#aaa;">
+        This work was done while J.&nbsp;Kim and S.&nbsp;Rho were at the RAI Institute.
+        &nbsp;{sfahmi@rai-inst.com, jkim3662@gatech.edu}
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
